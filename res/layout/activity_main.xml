@@ -1,0 +1,92 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:stretchColumns="*">
+	<TableRow >
+
+		<TextView
+		    android:id="@+id/ename"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Name : " />
+
+		<EditText
+		    android:id="@+id/empName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10" >
+
+		    <requestFocus />
+		</EditText>
+	    
+	</TableRow>
+	<TableRow >
+
+		<TextView
+		    android:id="@+id/eId"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Employee ID : " />
+
+		<EditText
+		    android:id="@+id/empId"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:inputType="number" />
+	    
+	</TableRow>
+	
+	<TableRow >
+
+		<TextView
+		    android:id="@+id/eAddress"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Address : " />
+
+		<EditText
+		    android:id="@+id/empAddress"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:ems="10" />
+	    
+	</TableRow>
+    <TableRow >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:text="Save"
+            android:onClick="save"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show" 
+            android:onClick="show"/>
+        
+    </TableRow>
+    
+    <TableRow >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:text="delete"
+            android:onClick="delete"/>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update" 
+            android:onClick="update"
+            android:visibility="visible"/>
+        
+    </TableRow>
+
+</TableLayout>
